@@ -19,10 +19,18 @@ public class Lab11avst
         displayPrimes(primes);
     }
 
-    public static void computePrimes(boolean primes[])
-    {
+    public static void computePrimes(boolean primes[]) {
         System.out.println("\nCOMPUTING PRIME NUMBERS");
 
+        for (int value = 0; value <= primes.length; value++){
+            primes[value] = true;
+        }
+
+        for(int key = 0; key <= primes.length; key++){
+            for(int div = 1; div < key; div += key) {
+
+            }
+        }
     }
 
     public static void displayPrimes(boolean primes[])
